@@ -1,0 +1,190 @@
+/* .chatList{
+    flex:1;
+        .item{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            cursor: pointer;
+            border-bottom: 1px solid #dddddd35;
+            overflow-y:scroll
+
+            &.selected{
+                background-color: #1a73e8;
+
+            }
+            
+    
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+    
+            .text{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+    
+            span{
+                font-weight: 500;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 300;
+            }
+    
+            
+        }
+    
+    
+
+    
+}
+
+
+.chatList:hover {
+    overflow-y: auto;
+}
+
+.chatList {
+    transition: overflow 0.5s ease;
+} 
+
+.search{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+
+    .searchBar{
+        flex:1;
+        background-color:rgba(17,25,40,0.5) ;
+        display: flex;
+        gap: 20px;
+        border-radius: 20px;
+        padding: 10px;
+
+        input{
+            background-color: transparent;
+            border:none;
+            outline: none;
+            color:white;
+            flex:1;
+        }
+
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .add{
+        width: 36px;
+        height: 36px;
+        background-color: rgba(17,25,40,0.5);
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+   
+}
+
+ */
+
+ .chatList {
+    flex: 1;
+    overflow-y: hidden;
+    background-color: #111b21;
+}
+
+.chatList .item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+    /* border-bottom: 1px solid #dddddd35; */
+    border-bottom: 1px solid #dddddd35;
+    overflow-y: scroll;
+}
+
+.chatList .item.selected {
+    /* background-color: #1a73e8; */
+    background-color:#2a3942;
+}
+
+.chatList .item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chatList .item .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chatList .item span {
+    font-weight: 500;
+}
+
+.chatList .item p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.chatList .item :hover {
+    overflow-y: auto;
+}
+
+.chatList {
+    transition: overflow 0.5s ease;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    /* background-color: #111b21; */
+    background-color: #111b21;
+}
+
+.search .searchBar {
+    flex: 1;
+    background-color: #202c33;
+    display: flex;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.search .searchBar input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    flex: 1;
+}
+
+.search .searchBar img {
+    width: 20px;
+    height: 20px;
+}
+
+.search .add {
+    width: 36px;
+    height: 36px;
+    /* background-color: rgba(17, 25, 40, 0.5); */
+    background-color: #202c33;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
