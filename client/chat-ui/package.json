@@ -45,5 +45,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-class-properties": "^7.25.4",
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.24.7",
+    "@babel/plugin-transform-numeric-separator": "^7.24.7",
+    "@babel/plugin-transform-optional-chaining": "^7.24.8",
+    "@babel/plugin-transform-private-methods": "^7.25.4",
+    "@jridgewell/sourcemap-codec": "^1.5.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "svgo": "^3.3.2"
   }
 }
