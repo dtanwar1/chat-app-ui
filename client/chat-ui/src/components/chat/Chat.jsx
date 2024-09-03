@@ -28,7 +28,7 @@ export default function Chat() {
     const endRef = useRef(null);
 
     useEffect(()=>{
-        socket.current = io('http://localhost:5000/');
+        socket.current = io(`${process.env.REACT_APP_BASE_URL}`);
         socket.current.on("msg-recieve", (data) =>{
             setRecievedMessage(data);
         });

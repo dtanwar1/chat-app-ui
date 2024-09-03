@@ -1,6 +1,6 @@
 import axios from 'axios';
 import Errors from '../util/error';
-const baseURL = 'http://localhost:5000/api/chat'; 
+const baseURL = `${process.env.REACT_APP_BASE_URL}${process.env.REACT_APP_CHAT_ENDPOINT}`; 
 
 const chatAxios = axios.create({
   baseURL,

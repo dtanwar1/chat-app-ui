@@ -1,7 +1,6 @@
 import axios from 'axios';
 import Errors from '../util/error';
-const baseURL = 'http://localhost:5000/api/auth'; 
-
+const baseURL = `${process.env.REACT_APP_BASE_URL}${process.env.REACT_APP_AUTH_ENDPOINT}`; 
 const authAxios = axios.create({
   baseURL,
   headers: {
